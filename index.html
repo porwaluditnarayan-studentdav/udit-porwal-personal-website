@@ -1,7 +1,86 @@
 <!doctype html>
-<html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Website Editor | Udit</title></head>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="The personal website of Udit Narayan Porwal — projects, writing, achievements and ideas.">
+  <meta property="og:title" content="Udit Narayan Porwal | Personal Website">
+  <meta property="og:description" content="Projects, writing, achievements and ideas.">
+  <meta property="og:type" content="website">
+  <title>Udit Narayan Porwal | Personal Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Udit home"><span class="brand-mark">U</span><span>UDIT<span class="gold">.</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="nav">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#achievements">Highlights</a><a href="#journal">Journal</a><a class="nav-cta" href="#contact">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> PERSONAL SPACE · IDEAS IN PROGRESS</div>
+        <p class="intro-line">Hello, world. I'm</p>
+        <h1>Udit Narayan<br><span class="gold">Porwal.</span></h1>
+        <p class="hero-description">A curious mind building ideas, exploring creativity, and documenting the journey one project at a time.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#projects">Explore my work <span>↗</span></a><a class="button button-quiet" href="#about">A little about me</a></div>
+        <div class="social-row"><a href="#contact">Instagram ↗</a><span></span><a href="#contact">YouTube ↗</a><span></span><a href="#contact">Email ↗</a></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="portrait-card">
+          <div class="portrait-placeholder"><span class="portrait-initials">UP</span><span class="portrait-caption">YOUR PHOTO GOES HERE</span></div>
+          <div class="portrait-bottom"><div><span class="small-label">CURRENT MODE</span><strong>Learning · Creating · Growing</strong></div><span class="sparkle">✦</span></div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> Always curious</div>
+        <div class="floating-tag tag-bottom">✦ <span>Ideas → Action</span></div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / THE PERSON BEHIND THE PAGE</p><h2>A little about <span class="gold">me.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">I believe every big idea starts with a small step—and every day is a chance to learn something new.</p>
+        <div class="about-detail"><p>This is my corner of the internet: a place to share what I’m working on, what I’m learning, and the things that inspire me. As I grow, this page will grow with me.</p><p class="muted">Replace this paragraph with your own story whenever you're ready.</p><div class="pill-row"><span>Curiosity</span><span>Creativity</span><span>Consistency</span></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap projects-section" id="projects">
+      <div class="section-heading split-heading"><div><p class="eyebrow">02 / THINGS I'M MAKING</p><h2>Selected <span class="gold">projects.</span></h2></div><p class="heading-note">A growing collection of experiments, ideas and work.</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured"><div class="project-art art-one"><span>01</span><div class="art-shape"></div><div class="art-lines"></div></div><div class="project-meta"><span>FEATURED PROJECT</span><span>↗</span></div><h3>Project One</h3><p>Add a short description of a project, school activity, creative work or website you've made.</p><div class="project-tags"><span>Creative</span><span>In progress</span></div></article>
+        <article class="project-card"><div class="project-art art-two"><span>02</span><div class="art-ring"></div><div class="art-square"></div></div><div class="project-meta"><span>EXPERIMENT</span><span>↗</span></div><h3>Project Two</h3><p>Showcase another project and what you learned while making it.</p><div class="project-tags"><span>Learning</span><span>Ideas</span></div></article>
+        <article class="project-card"><div class="project-art art-three"><span>03</span><div class="art-star">✳</div></div><div class="project-meta"><span>IN THE WORKS</span><span>↗</span></div><h3>Something New</h3><p>Keep a space ready for the next idea you want to bring to life.</p><div class="project-tags"><span>Coming soon</span></div></article>
+      </div>
+    </section>
+
+    <section class="section-wrap highlights-section" id="achievements">
+      <div class="section-heading"><p class="eyebrow">03 / MILESTONES</p><h2>Small steps. <span class="gold">Big meaning.</span></h2></div>
+      <div class="highlight-list">
+        <div class="highlight-item"><span class="highlight-number">01</span><div><h3>Learning something new</h3><p>Add a course, skill, subject or new experience here.</p></div><span class="highlight-symbol">↗</span></div>
+        <div class="highlight-item"><span class="highlight-number">02</span><div><h3>A proud moment</h3><p>Share a competition, achievement, event or personal milestone.</p></div><span class="highlight-symbol">↗</span></div>
+        <div class="highlight-item"><span class="highlight-number">03</span><div><h3>Next on the list</h3><p>Write down a goal you’re working towards.</p></div><span class="highlight-symbol">↗</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap journal-section" id="journal">
+      <div class="section-heading split-heading"><div><p class="eyebrow">04 / NOTES & THOUGHTS</p><h2>The <span class="gold">journal.</span></h2></div><p class="heading-note">Short reflections, stories and things worth remembering.</p></div>
+      <div class="journal-card"><div class="journal-icon">✍</div><div><p class="journal-date">YOUR FIRST POST</p><h3>Your first journal entry is waiting.</h3><p>Once the CMS is connected, you’ll be able to publish posts from the /admin page without editing code.</p></div><a class="round-link" href="/admin/">↗</a></div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="section-wrap contact-inner"><p class="eyebrow">05 / SAY HELLO</p><h2>Have an idea?<br><span class="gold">Let's connect.</span></h2><p>For collaborations, questions or a friendly hello, reach out through your preferred channel.</p><div class="hero-actions"><a class="button button-gold" href="mailto:hello@example.com" id="emailLink">Send an email ↗</a><a class="button button-quiet" href="#home">Back to top ↑</a></div><p class="contact-note">Remember to replace the sample email and social links with your own.</p></div></section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">U</span><span>UDIT<span class="gold">.</span></span></a><p>Built with curiosity. © <span id="year"></span> Udit Narayan Porwal</p><a href="/admin/">Site editor ↗</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
