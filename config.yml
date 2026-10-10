@@ -1,0 +1,24 @@
+# Before publishing, replace YOUR_GITHUB_USERNAME and YOUR_REPOSITORY below.
+# This CMS requires a GitHub repository and Netlify authentication configuration.
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+
+site_url: ""
+display_url: ""
+
+collections:
+  - name: "blog"
+    label: "Journal Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
